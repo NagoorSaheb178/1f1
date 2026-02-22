@@ -74,15 +74,5 @@ Returns detailed metadata for a specific product, including all variants and EMI
    npm run dev
    ```
 
-## ✅ Assignment Compliance
 
-| Requirement | Implementation Detail | Status |
-| :--- | :--- | :---: |
-| **Dynamic Data** | 100% API-driven; no hardcoded UI values | ✅ |
-| **Unique URLs** | Dynamic App Router paths (e.g., `/products/iphone-17-pro`) | ✅ |
-| **Catalog Depth** | 6 unique products with 2+ variants each | ✅ |
-| **EMI Logic** | Selectable plans with specific Tenure/Interest/Cashback | ✅ |
-| **Strict .env** | Zero-fallback policy for sensitive URIs | ✅ |
-
----
 *Developed as part of the 1Fi Full Stack Developer Assignment.*
