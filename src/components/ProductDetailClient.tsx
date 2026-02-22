@@ -135,7 +135,19 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
                         {/* MOBILE: dot carousel | DESKTOP: left thumbnail strip + main image */}
 
                         {/* MOBILE CAROUSEL */}
-                       
+                        <div className="md:hidden w-full mb-6 relative">
+                            <div className="w-full bg-white rounded-3xl p-6 border border-teal-50 shadow-sm flex items-center justify-center min-h-[300px]">
+                                {mainImage ? (
+                                    <img
+                                        key={selectedImageIdx}
+                                        src={mainImage}
+                                        alt={product.name}
+                                        className="carousel-img max-w-full max-h-[260px] object-contain drop-shadow-xl"
+                                    />
+                                ) : (
+                                    <div className="text-gray-300">No image available</div>
+                                )}
+                            </div>
                             {/* Prev / Next buttons */}
                             {variantImages.length > 1 && (
                                 <>
@@ -328,5 +340,4 @@ export default function ProductDetailClient({ product }: ProductDetailClientProp
         </div>
     );
 }
-
 
